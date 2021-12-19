@@ -16,4 +16,4 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   providers: [GenresFacade],
 })
-export class SharedDataAccessGenresModule {}
+export class SharedGamesDataAccessGenresModule {}

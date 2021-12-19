@@ -1,6 +1,6 @@
 module.exports = {
-  displayName: 'shared-data-access-genres',
-  preset: '../../../jest.preset.js',
+  displayName: 'shared-games-data-access-genres',
+  preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
   globals: {
     'ts-jest': {
@@ -8,7 +8,8 @@ module.exports = {
       stringifyContentPathRegex: '\\.(html|svg)$',
     },
   },
-  coverageDirectory: '../../../coverage/libs/shared/data-access-genres',
+  coverageDirectory:
+    '../../../../coverage/libs/shared/games/data-access-genres',
   transform: {
     '^.+\\.(ts|js|html)$': 'jest-preset-angular',
   },

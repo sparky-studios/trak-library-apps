@@ -1,20 +1,20 @@
 import { TestBed } from '@angular/core/testing';
 
 import { GenreService } from './genre.service';
-import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('GenreService', () => {
   let service: GenreService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [
-        HttpClientTestingModule
+      imports: [HttpClientTestingModule],
+      providers: [
+        {
+          provide: 'domain',
+          useValue: '',
+        },
       ],
-      providers: [{
-        provide: 'domain',
-        useValue: ''
-      }]
     });
 
     service = TestBed.inject(GenreService);

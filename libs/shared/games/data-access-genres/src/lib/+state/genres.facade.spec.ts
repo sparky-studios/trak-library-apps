@@ -8,9 +8,9 @@ import { readFirst } from '@nrwl/angular/testing';
 import { GenresEffects } from './genres.effects';
 import { GenresFacade } from './genres.facade';
 import { GENRES_FEATURE_KEY, State, reducer } from './genres.reducer';
-import { Genre } from '@sparky-studios/shared/data-access-genres';
+import { Genre } from './genres.models';
 import { getGenreSuccessAction } from './genres.actions';
-import { HttpClientTestingModule } from "@angular/common/http/testing";
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 interface TestSchema {
   genres: State;
@@ -37,12 +37,14 @@ describe('GenresFacade', () => {
           StoreModule.forRoot({}),
           EffectsModule.forRoot([]),
           CustomFeatureModule,
-          HttpClientTestingModule
+          HttpClientTestingModule,
         ],
-        providers: [{
-          provide: 'domain',
-          useValue: ''
-        }]
+        providers: [
+          {
+            provide: 'domain',
+            useValue: '',
+          },
+        ],
       })
       class RootModule {}
       TestBed.configureTestingModule({ imports: [RootModule] });

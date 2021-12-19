@@ -4,7 +4,7 @@ import {
   getGenreAction,
   getGenreFailureAction,
   getGenreSuccessAction,
-} from '@sparky-studios/shared/data-access-genres';
+} from './genres.actions';
 import { catchError, map, switchMap } from 'rxjs/operators';
 import { GenreService } from '../service/genre.service';
 import { of } from 'rxjs';

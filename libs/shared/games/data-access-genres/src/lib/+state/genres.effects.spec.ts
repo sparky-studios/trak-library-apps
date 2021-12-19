@@ -7,12 +7,12 @@ import { hot, cold } from '@nrwl/angular/testing';
 import { Observable, of, throwError } from 'rxjs';
 
 import { GenresEffects } from './genres.effects';
+import { Genre } from './genres.models';
 import {
-  Genre,
   getGenreAction,
   getGenreFailureAction,
   getGenreSuccessAction,
-} from '@sparky-studios/shared/data-access-genres';
+} from './genres.actions';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { GenreService } from '../service/genre.service';
 

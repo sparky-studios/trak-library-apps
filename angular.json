@@ -1,17 +1,17 @@
 {
   "version": 1,
   "projects": {
-    "shared-data-access-genres": {
+    "shared-games-data-access-genres": {
       "projectType": "library",
-      "root": "libs/shared/data-access-genres",
-      "sourceRoot": "libs/shared/data-access-genres/src",
+      "root": "libs/shared/games/data-access-genres",
+      "sourceRoot": "libs/shared/games/data-access-genres/src",
       "prefix": "sparky-studios",
       "architect": {
         "test": {
           "builder": "@nrwl/jest:jest",
-          "outputs": ["coverage/libs/shared/data-access-genres"],
+          "outputs": ["coverage/libs/shared/games/data-access-genres"],
           "options": {
-            "jestConfig": "libs/shared/data-access-genres/jest.config.js",
+            "jestConfig": "libs/shared/games/data-access-genres/jest.config.js",
             "passWithNoTests": true
           }
         },
@@ -19,8 +19,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/shared/data-access-genres/src/**/*.ts",
-              "libs/shared/data-access-genres/src/**/*.html"
+              "libs/shared/games/data-access-genres/src/**/*.ts",
+              "libs/shared/games/data-access-genres/src/**/*.html"
             ]
           }
         }
@@ -142,6 +142,31 @@
           "outputs": ["{options.outputFile}"],
           "options": {
             "lintFilePatterns": ["apps/trak-librarian-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "trak-librarian-games-feature-genre-page": {
+      "projectType": "library",
+      "root": "libs/trak-librarian/games/feature-genre-page",
+      "sourceRoot": "libs/trak-librarian/games/feature-genre-page/src",
+      "prefix": "sparky-studios",
+      "architect": {
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/trak-librarian/games/feature-genre-page"],
+          "options": {
+            "jestConfig": "libs/trak-librarian/games/feature-genre-page/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/trak-librarian/games/feature-genre-page/src/**/*.ts",
+              "libs/trak-librarian/games/feature-genre-page/src/**/*.html"
+            ]
           }
         }
       }

@@ -6,13 +6,13 @@ import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
-import { SharedDataAccessGenresModule } from '@sparky-studios/shared/data-access-genres';
+import { SharedGamesDataAccessGenresModule } from '@sparky-studios/shared-games-data-access-genres';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    SharedDataAccessGenresModule,
+    SharedGamesDataAccessGenresModule,
     StoreModule.forRoot(
       {},
       {

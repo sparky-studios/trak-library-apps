@@ -27,7 +27,7 @@
     ]
   },
   "projects": {
-    "shared-data-access-genres": {
+    "shared-games-data-access-genres": {
       "tags": []
     },
     "trak-librarian": {
@@ -36,6 +36,9 @@
     "trak-librarian-e2e": {
       "tags": [],
       "implicitDependencies": ["trak-librarian"]
+    },
+    "trak-librarian-games-feature-genre-page": {
+      "tags": []
     }
   }
 }

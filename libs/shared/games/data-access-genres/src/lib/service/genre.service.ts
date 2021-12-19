@@ -1,6 +1,6 @@
 import { Inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Genre } from '@sparky-studios/shared/data-access-genres';
+import { Genre } from '../+state/genres.models';
 import { HttpClient } from '@angular/common/http';
 
 /**

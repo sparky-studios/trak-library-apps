@@ -15,8 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sparky-studios/shared/data-access-genres": [
-        "libs/shared/data-access-genres/src/index.ts"
+      "@sparky-studios/shared-games-data-access-genres": [
+        "libs/shared/games/data-access-genres/src/index.ts"
+      ],
+      "@sparky-studios/trak-librarian/games/feature-genre-page": [
+        "libs/trak-librarian/games/feature-genre-page/src/index.ts"
       ]
     }
   },
